@@ -11,6 +11,7 @@ html {
   background: #F6F6F6;
 }
 
+/*this defines the UI max-width*/
 #root {
   max-width: 1200px;
   margin: 0 auto;
@@ -36,11 +37,13 @@ p {
   margin: 0;
 }
 
+/*this is the flex wrap think of it as a RecyclerView */
 .container {
   display: flex;
   flex-wrap: wrap;
 }
 
+/*this would compare to a CardView in Android*/
 .card {
   margin: 1rem;
   background: white;
@@ -55,6 +58,7 @@ p {
   transform: translate3D(0, -2px, 0);
 }
 
+/*meida queries follow for mobile devices*/
 @media screen and (min-width: 600px) {
   .card {
     flex: 1 1 calc(50% - 2rem);
